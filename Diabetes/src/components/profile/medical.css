@@ -1,0 +1,112 @@
+.medical-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.medical-info__block {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.medical-info__block h3 {
+  color: #1e3a8a;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.medical-info__block label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: #374151;
+  font-weight: 600;
+  gap: 0.25rem;
+}
+
+.medical-info__block input,
+.medical-info__block textarea {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
+.medical-info__block input:focus,
+.medical-info__block textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.medical-info__instructions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.medical-info__instructions li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f9fafb;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: #374151;
+}
+
+.medical-info__empty {
+  justify-content: center;
+  color: #9ca3af;
+  font-style: italic;
+  background: transparent !important;
+}
+
+.medical-info__add {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.medical-info__add input {
+  flex: 1;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  color: #9ca3af;
+}
+
+.icon-btn--danger:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
