@@ -1,0 +1,27 @@
+.insulin-page__header {
+  margin-bottom: 1.5rem;
+}
+
+.insulin-page__header h2 {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.insulin-page__header p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.insulin-page__grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .insulin-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
