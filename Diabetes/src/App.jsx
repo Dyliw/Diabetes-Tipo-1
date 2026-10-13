@@ -17,12 +17,8 @@ const router = createBrowserRouter([
       { path: 'insulina', element: <InsulinPage /> },
       { path: 'comidas', element: <DailyMealsPage /> },
       { path: 'alimentos', element: <FoodLibraryPage /> },
-      {path: 'perfil',
-        children: [
-          { index: true, element: <ProfilePage /> },
-          { path: 'info-medica', element: <MedicalInfoPage /> },
-        ],
-      },
+      { path: 'info-medica', element: <MedicalInfoPage /> },
+        
     ],
   },
 ]);
