@@ -7,22 +7,23 @@ import FoodLibraryPage from './pages/library/FoodLibraryPage';
 import ProfilePage from './pages/profile/ProfilePage';
 import './App.css';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: 'insulina', element: <InsulinPage /> },
+        { path: 'comidas', element: <DailyMealsPage /> },
+        { path: 'alimentos', element: <FoodLibraryPage /> },
+        { path: 'perfil', element: <ProfilePage /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: 'insulina', element: <InsulinPage /> },
-      { path: 'comidas', element: <DailyMealsPage /> },
-      { path: 'alimentos', element: <FoodLibraryPage /> },
-      { path: 'perfil', element: <ProfilePage /> },
-    ],
-  },
-]
-{
     basename: '/Diabetes-Tipo-1',
-  }                                  
+  }
 );
 
 function App() {
