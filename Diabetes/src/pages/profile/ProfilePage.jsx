@@ -33,7 +33,7 @@ export default function ProfilePage() {
 
         <p className="profile-page__note">
           Datos demostrativos. En producción, esta sección debe servirse desde un backend
-          con cifrado en reposo y control de acceso por rol.
+          con cifrado y control de acceso por rol.
         </p>
       </div>
     </PinGate>
