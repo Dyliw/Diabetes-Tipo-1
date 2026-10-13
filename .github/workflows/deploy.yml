@@ -33,11 +33,11 @@ jobs:
           node-version: 22
 
       - name: Instalar dependencias
-        working-directory: diabetes
+        working-directory: Diabetes
         run: npm ci
 
       - name: Compilar React
-        working-directory: diabetes
+        working-directory: Diabetes
         run: npm run build
 
       - name: Configurar GitHub Pages
