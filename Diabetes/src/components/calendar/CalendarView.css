@@ -1,0 +1,132 @@
+.calendar-view {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-view__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.calendar-view__title {
+  font-weight: 700;
+  color: #1e3a8a;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+
+.calendar-view__nav {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #374151;
+  transition: background 0.15s ease;
+}
+
+.calendar-view__nav:hover {
+  background: #e5e7eb;
+}
+
+.calendar-view__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  text-align: center;
+}
+
+.calendar-view__weekday {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  font-weight: 700;
+  padding-bottom: 0.25rem;
+}
+
+.calendar-view__day,
+.calendar-view__empty {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  position: relative;
+}
+
+.calendar-view__day:hover {
+  background: #eff6ff;
+}
+
+.calendar-view__day--marked::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.calendar-view__day--today {
+  outline: 2px solid #93c5fd;
+  outline-offset: -2px;
+}
+
+.calendar-view__day--selected {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+}
+
+.calendar-view__day--selected::after {
+  background: #fff;
+}
+
+.calendar-view__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.calendar-view__legend {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot--marked {
+  background: #2563eb;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}

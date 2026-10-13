@@ -1,0 +1,32 @@
+.daily-summary__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.daily-summary__row:last-of-type {
+  border-bottom: none;
+}
+
+.daily-summary__label {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.daily-summary__value {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.daily-summary__value--glucose {
+  color: #059669;
+}
+
+.daily-summary__status {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}

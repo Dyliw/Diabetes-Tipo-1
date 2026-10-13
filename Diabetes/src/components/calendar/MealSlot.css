@@ -1,0 +1,99 @@
+.meal-slot {
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.85rem 1rem 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.meal-slot__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.meal-slot__title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.meal-slot__icon {
+  font-size: 1.1rem;
+}
+
+.meal-slot__count {
+  background: #eff6ff;
+  color: #1e3a8a;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  margin-left: 0.2rem;
+}
+
+.meal-slot__clear {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.meal-slot__clear:hover {
+  color: #b91c1c;
+}
+
+.meal-slot__empty {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  font-style: italic;
+}
+
+.meal-slot__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.meal-slot__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.meal-slot__emoji {
+  font-size: 1.1rem;
+}
+
+.meal-slot__name {
+  flex: 1;
+  color: #374151;
+}
+
+.meal-slot__remove {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 0.15rem 0.35rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.meal-slot__remove:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}

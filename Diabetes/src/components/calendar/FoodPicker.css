@@ -1,0 +1,111 @@
+.food-picker {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 1rem;
+}
+
+.food-picker__title {
+  font-size: 0.95rem;
+  color: #1e3a8a;
+  margin-bottom: 0.75rem;
+}
+
+.food-picker__slot-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.food-picker__slot-label select,
+.food-picker__search {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
+.food-picker__search:focus,
+.food-picker__slot-label select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.food-picker__list {
+  list-style: none;
+  max-height: 340px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0.6rem 0;
+}
+
+.food-picker__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 0.85rem;
+  cursor: grab;
+  transition: background 0.15s ease;
+}
+
+.food-picker__item:hover {
+  background: #eff6ff;
+}
+
+.food-picker__item:active {
+  cursor: grabbing;
+}
+
+.food-picker__emoji {
+  font-size: 1.1rem;
+}
+
+.food-picker__name {
+  flex: 1;
+  color: #374151;
+}
+
+.food-picker__add {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-picker__add:hover {
+  background: #1e40af;
+}
+
+.food-picker__empty {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  padding: 0.75rem;
+}
+
+.food-picker__hint {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  text-align: center;
+  margin-top: 0.5rem;
+}

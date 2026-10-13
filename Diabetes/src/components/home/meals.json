@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "note": "DATOS DEMOSTRATIVOS — No representan información real de ningún paciente.",
+    "mealTypes": [
+      { "id": "breakfast","label": "Desayuno"},
+      { "id": "lunch", "label": "Almuerzo"},
+      { "id": "dinner","label": "Comida"},
+      { "id": "supper","label": "Cena" }
+    ]
+  },
+  "dailyLogs": {
+    "2025-01-15": {
+      "breakfast": [
+        { "foodId": "food-005", "name": "Yogur natural sin azúcar", "emoji": "🥛" }
+      ],
+      "lunch": [
+        { "foodId": "food-003", "name": "Pechuga de pollo a la plancha", "emoji": "🍗" },
+        { "foodId": "food-004", "name": "Brócoli cocido", "emoji": "🥦" }
+      ],
+      "dinner": [],
+      "supper": []
+    }
+  }
+}

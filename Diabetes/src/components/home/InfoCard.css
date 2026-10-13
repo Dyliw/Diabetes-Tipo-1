@@ -1,0 +1,10 @@
+.info-card {
+  background: l#baacac;
+}
+
+.info-card__text {
+  color: #374151;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
