@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "note": "DATOS DEMOSTRATIVOS — No representan información real de ningún paciente."
+  },
+  "profile": {
+    "id": "user-001",
+    "name": "Lucía Martínez",
+    "age": 9,
+    "birthdate": "2016-03-12",
+    "bloodType": "O+",
+    "diagnosisDate": "2022-08-04",
+    "insulinType": "Lispro (rápida) + Glargina (basal)",
+    "nfcBraceletId": "NFC-DEMO-0001",
+    "tutors": [
+      {
+        "id": "tutor-001",
+        "name": "Mariana Martínez",
+        "relationship": "Madre",
+        "phone": "+52 555 000 0000",
+        "isPrimary": true
+      },
+      {
+        "id": "tutor-002",
+        "name": "Carlos Martínez",
+        "relationship": "Padre",
+        "phone": "+52 555 000 0001",
+        "isPrimary": false
+      }
+    ],
+    "medicalInfo": {
+      "allergies": "Ninguna conocida",
+      "chronicConditions": "Diabetes mellitus tipo 1",
+      "currentMedication": "Insulina Lispro y Glargina",
+      "notes": "Porta pulsera NFC con identificación del perfil."
+    },
+    "careInstructions": [
+      "Medir glucosa antes de cada comida principal.",
+      "Registrar cada aplicación de insulina en la app.",
+      "Mantener snacks de carbohidratos rápidos a la mano.",
+      "Acudir a control médico cada 3 meses."
+    ],
+    "emergencyContact": {
+      "name": "Mariana Martínez",
+      "relationship": "Madre",
+      "phone": "+52 555 000 0000"
+    }
+  }
+}

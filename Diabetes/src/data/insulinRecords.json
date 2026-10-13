@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "id": "rec-001",
+      "date": "2025-01-15",
+      "time": "07:45",
+      "insulinType": "Lispro (rápida)",
+      "dose": 4,
+      "status": "applied",
+      "observations": "Aplicada antes del desayuno.",
+      "source": "manual",
+      "createdAt": "2025-01-15T07:45:00.000Z",
+      "updatedAt": "2025-01-15T07:45:00.000Z"
+    },
+    {
+      "id": "rec-002",
+      "date": "2025-01-15",
+      "time": "13:30",
+      "insulinType": "Lispro (rápida)",
+      "dose": 3,
+      "status": "applied",
+      "observations": "",
+      "source": "nfc",
+      "createdAt": "2025-01-15T13:30:00.000Z",
+      "updatedAt": "2025-01-15T13:30:00.000Z"
+    },
+    {
+      "id": "rec-003",
+      "date": "2025-01-14",
+      "time": "20:00",
+      "insulinType": "Glargina (basal)",
+      "dose": 5,
+      "status": "applied",
+      "observations": "Registro nocturno.",
+      "source": "manual",
+      "createdAt": "2025-01-14T20:00:00.000Z",
+      "updatedAt": "2025-01-14T20:00:00.000Z"
+    }
+  ],
+  "meta": {
+    "note": "DATOS DEMOSTRATIVOS — No representan información real de ningún paciente."
+  }
+}

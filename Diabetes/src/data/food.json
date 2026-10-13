@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "note": "DATOS DEMOSTRATIVOS — Valores nutricionales aproximados, no sustituyen asesoría profesional.",
+    "categories": ["Frutas", "Cereales", "Proteínas", "Verduras", "Lácteos", "Platillos"]
+  },
+  "foods": [
+    {
+      "id": "food-001",
+      "name": "Manzana",
+      "category": "Frutas",
+      "emoji": "🍎",
+      "portion": { "size": 1, "unit": "pieza mediana", "grams": 180 },
+      "nutrition": {
+        "energyKcal": 95,
+        "carbsG": 25,
+        "proteinG": 0.5,
+        "fatG": 0.3,
+        "fiberG": 4.4,
+        "glycemicIndex": 36
+      },
+      "description": "Fruta de sabor dulce, rica en fibra y agua. Su índice glucémico es bajo, por lo que se absorbe lentamente."
+    },
+    {
+      "id": "food-002",
+      "name": "Arroz blanco cocido",
+      "category": "Cereales",
+      "emoji": "🍚",
+      "portion": { "size": 100, "unit": "g cocidos", "grams": 100 },
+      "nutrition": {
+        "energyKcal": 130,
+        "carbsG": 28,
+        "proteinG": 2.7,
+        "fatG": 0.3,
+        "fiberG": 0.4,
+        "glycemicIndex": 73
+      },
+      "description": "Cereal base en muchas comidas. Su índice glucémico es alto, por lo que conviene acompañarlo con proteínas y verduras."
+    },
+    {
+      "id": "food-003",
+      "name": "Pechuga de pollo a la plancha",
+      "category": "Proteínas",
+      "emoji": "🍗",
+      "portion": { "size": 100, "unit": "g", "grams": 100 },
+      "nutrition": {
+        "energyKcal": 165,
+        "carbsG": 0,
+        "proteinG": 31,
+        "fatG": 3.6,
+        "fiberG": 0,
+        "glycemicIndex": null
+      },
+      "description": "Fuente magra de proteína. No aporta carbohidratos, por lo que no eleva la glucosa por sí sola."
+    },
+    {
+      "id": "food-004",
+      "name": "Brócoli cocido",
+      "category": "Verduras",
+      "emoji": "🥦",
+      "portion": { "size": 100, "unit": "g", "grams": 100 },
+      "nutrition": {
+        "energyKcal": 35,
+        "carbsG": 7,
+        "proteinG": 2.4,
+        "fatG": 0.4,
+        "fiberG": 3.3,
+        "glycemicIndex": 15
+      },
+      "description": "Verdura con bajo aporte calórico y alto contenido de fibra. Su índice glucémico es muy bajo."
+    },
+    {
+      "id": "food-005",
+      "name": "Yogur natural sin azúcar",
+      "category": "Lácteos",
+      "emoji": "🥛",
+      "portion": { "size": 1, "unit": "vaso (200 g)", "grams": 200 },
+      "nutrition": {
+        "energyKcal": 120,
+        "carbsG": 9,
+        "proteinG": 7,
+        "fatG": 6,
+        "fiberG": 0,
+        "glycemicIndex": 35
+      },
+      "description": "Lácteo fermentado con proteínas y probióticos. Sin azúcar añadida, su impacto en glucosa es moderado."
+    }
+  ]
+}
