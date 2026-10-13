@@ -32,11 +32,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: diabetes/package-lock.json
 
       - name: Instalar dependencias
+        working-directory: diabetes
         run: npm ci
 
       - name: Compilar React
+        working-directory: diabetes
         run: npm run build
 
       - name: Configurar GitHub Pages
@@ -45,7 +48,7 @@ jobs:
       - name: Preparar archivos compilados
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: diabetes/dist
 
       - name: Publicar sitio
         id: deployment
