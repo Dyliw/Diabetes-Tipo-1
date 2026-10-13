@@ -46,7 +46,7 @@ jobs:
       - name: Preparar archivos compilados
         uses: actions/upload-pages-artifact@v3
         with:
-          path: diabetes/dist
+          path: Diabetes/dist
 
       - name: Publicar sitio
         id: deployment
