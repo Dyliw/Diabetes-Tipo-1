@@ -5,26 +5,28 @@ import InsulinPage from './pages/insulin/InsulinPage';
 import DailyMealsPage from './pages/meals/DailyMeal';
 import FoodLibraryPage from './pages/library/FoodLibraryPage';
 import ProfilePage from './pages/profile/ProfilePage';
+import MedicalInfoPage from './components/profile/MedicalInfo';
 import './App.css';
 
-const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <MainLayout />,
-      children: [
-        { index: true, element: <HomePage /> },
-        { path: 'insulina', element: <InsulinPage /> },
-        { path: 'comidas', element: <DailyMealsPage /> },
-        { path: 'alimentos', element: <FoodLibraryPage /> },
-        { path: 'perfil', element: <ProfilePage /> },
-      ],
-    },
-  ],
+const router = createBrowserRouter([
   {
-    basename: '/Diabetes-Tipo-1',
-  }
-);
+    path: '/',
+    element: <MainLayout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: 'insulina', element: <InsulinPage /> },
+      { path: 'comidas', element: <DailyMealsPage /> },
+      { path: 'alimentos', element: <FoodLibraryPage /> },
+      { path: 'perfil', element: <ProfilePage /> },
+      {path: 'perfil',
+        children: [
+          { index: true, element: <ProfilePage /> },
+          { path: 'info-medica', element: <MedicalInfoPage /> },
+        ],
+      },
+    ],
+  },
+]);
 
 function App() {
   return <RouterProvider router={router} />;
