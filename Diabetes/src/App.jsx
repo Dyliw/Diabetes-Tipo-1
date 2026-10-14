@@ -26,7 +26,11 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+]
+ {
+    basename: '/Diabetes-Tipo-1',
+  }
+);
 
 function App() {
   return <RouterProvider router={router} />;
